@@ -1,0 +1,32 @@
+{
+  "name": "sprite-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Daniel Bertrand",
+  "license": "ISC",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node ../../.cursor-tutor/projects/sprite-creator/dist/index.js",
+    "dev": "../../.cursor-tutor/projects/sprite-creator/node_modules/.bin/concurrently \\\"npx tsc --watch\\\" \\\"nodemon -q dist/index.js\\\""
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "sharp": "^0.32.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.0",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
