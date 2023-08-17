@@ -8,8 +8,8 @@
   "license": "ISC",
   "scripts": {
     "build": "npx tsc",
-    "start": "node ../../.cursor-tutor/projects/sprite-creator/dist/index.js",
-    "dev": "../../.cursor-tutor/projects/sprite-creator/node_modules/.bin/concurrently \\\"npx tsc --watch\\\" \\\"nodemon -q dist/index.js\\\""
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "dependencies": {
     "axios": "^1.4.0",
